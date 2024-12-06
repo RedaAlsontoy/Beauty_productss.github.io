@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty products</title>
+    <link rel="icon" href="/images/Logo-1.webp">
+    <!-- bootstrap for reset element -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- render all elements -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- font icons -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- main style -->
+    <link rel="stylesheet" href="css/main-style.css">
+    <!-- side bar styles -->
+    <!-- <link rel="stylesheet" href="css/sidebar.css"> -->
+    <!-- Header styles -->
+    <link rel="stylesheet" href="css/header.css">
+    <!-- Landing styles -->
+    <link rel="stylesheet" href="css/landing.css">
+    <!-- about styles -->
+    <link rel="stylesheet" href="css/about.css">
+    <!-- menu styles -->
+    <link rel="stylesheet" href="css/menu.css">
+    <!-- review styles -->
+    <link rel="stylesheet" href="css/review.css">
+    <!-- coantact us styles -->
+    <link rel="stylesheet" href="css/contact.css">
+    <!-- blog styles -->
+    <link rel="stylesheet" href="css/blog.css">
+    <!-- footer styles -->
+    <link rel="stylesheet" href="css/footer.css">
+  </head>
+
+  <body>
+    <!-- start header -->
+    <header class="header">
+      <div class="header-container">
+        <div class="logo">
+          <a href="#" data-scroll="home">
+            <img src="images/Logo-1.webp" alt="Logo" class="logo" title="Logo">
+          </a>
+        </div>
+        <nav class="nav">
+          <i class="fas fa-bars toggle-menu"></i>
+          <ul id="links">
+            <li>
+              <a href="#" data-scroll="home" class="header-links active" class="active">Home</a>
+            </li>
+            <li>
+              <a href="#" data-scroll="about" class="header-links">About</a>
+            </li>
+            <li>
+              <a href="#" data-scroll="products" class="header-links">Products</a>
+            </li>
+            <li>
+              <a href="#" data-scroll="review" class="header-links">Review</a>
+            </li>
+            <li>
+              <a href="#" data-scroll="contact" class="header-links">Contact</a>
+            </li>
+            <li>
+              <a href="#" data-scroll="blogs" class="header-links">Blogs</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="icon">
+          <div class="dark-light">
+            <div class="dark-light-icons">
+              <i class="fa fa-sun light" data-color="rgb(8, 17, 45)" data-background="#fafafa"></i>
+              <i class="fa fa-moon dark active" data-color="#fafafa" data-background="rgb(8, 17, 45)"></i>
+            </div>
+          </div>
+          <div class="sidebar-box">
+            <i class="fas fa-palette toggle-colors"></i>
+            <div class="colors">
+              <ul class="swich-color">
+                <li class="color" data-color="#d3ad7f">d</li>
+                <li class="color" data-color="#28a745"></li>
+                <li class="color" data-color="#007bff"></li>
+                <li class="color" data-color="#f00"></li>
+                <li class="color" data-color="#ff00ff"></li>
+                <li class="color" data-color="#8d14ff"></li>
+                <li class="color" data-color="#e06b09"></li>
+                <li class="color">
+                  <input type="color" name="color" id="color" data-color="" />
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- <div class="sreech">
+            <input type="text" id="input-sreech" placeholder="sreech">
+            <i class="fas fa-search" id="toggle-sreech"></i>
+          </div> -->
+        </div>
+      </div>
+    </header>
+    <!-- end header -->
+    <!-- start sidebar -->
+    <!-- <aside class="sidebar">
+      <div class="toggle-icon">
+        <i class="fas fa-gear toggle-sidebar"></i>
+      </div>
+      <div class="sidebar-content disnone">
+        
+      </div>
+    </aside> -->
+    <!-- end sidebar -->
+    <div class="page">
+      <!-- start landing -->
+      <div class="landing sections" id="home">
+        <div class="overlay image"></div>
+        <div class="overlay"></div>
+        <div class="container">
+          <div class="text">
+            <h2 class="selection" id="home">
+              Hello Every one!
+              <br>
+              i'm
+              <span class="selection">Reda</span>
+              i make art.
+            </h2>
+            <p class="selection">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, quod provident! Ab, voluptate? Nesciunt,
+              vel
+              labore consectetur magnam aut quae commodi
+            </p>
+            <button class="page-button">Get Your Page</button>
+          </div>
+
+        </div>
+        <button class="fas fa-angle-left fa-2x change-background" onclick="changBackgroundRightClick()"
+          data-background="yes"></button>
+        <button class="fas fa-angle-right fa-2x change-background" onclick="changBackgroundLeftClick()"
+          data-background="no"></button>
+        <div class="phone">
+          <div class="logo last">
+            <a href="#" data-scroll="home">
+              <img src="images/Logo-1.webp" alt="Logo" class="logo" title="Logo">
+            </a>
+          </div>
+          <span>01070010523</span>
+          <div class="logo last">
+            <a href="#" data-scroll="home">
+              <img src="images/Logo-1.webp" alt="Logo" class="logo" title="Logo">
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- end landing -->
+      <!-- startabout us -->
+      <div class="sections" id="about">
+        <div class="container">
+          <h2 class="main-heading"><span>about</span> us</h2>
+          <div class="about-content">
+            <div class="image">
+              <div class="overlay"></div>
+              <img id="about-image" src="images/s2.webp" alt="">
+              <div class="bottons">
+                <button class="fas fa-angle-left fa-2x left-button change-iamges" data-background="yes"></button>
+                <button class="fas fa-angle-right fa-2x right-button change-iamges" data-background="no"></button>
+              </div>
+            </div>
+            <div class="text">
+              <h3>What Makes Our <span>مُلخية</span> Speacial</h3>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore illo cum sequi autem explicabo hic
+                aspernatur beatae doloribus delectus quidem?</p>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim, amet?</p>
+              <button class="page-button">Lean More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end about us -->
+      <!-- start products -->
+      <div class="sections" id="products">
+        <h2 class="main-heading">our <span>Product</span></h2>
+        <div class="container">
+          <div class="menu-content">
+            <div class="menu-item">
+              <img src="images/s1.webp" alt="">
+              <h5>black hear</h5>
+              <p>$20.00 <sub>$25.00</sub></p>
+              <button class="page-button">add to cart</button>
+            </div>
+            <div class="menu-item">
+              <img src="images/s2.webp" alt="">
+              <h5>black hear</h5>
+              <p>$20.00 <sub>$25.00</sub></p>
+              <button class="page-button">add to cart</button>
+            </div>
+            <div class="menu-item">
+              <img src="images/s3.webp" alt="">
+              <h5>black hear</h5>
+              <p>$20.00 <sub>$25.00</sub></p>
+              <button class="page-button">add to cart</button>
+            </div>
+            <div class="menu-item">
+              <img src="images/s4.webp" alt="">
+              <h5>black hear</h5>
+              <p>$20.00 <sub>$25.00</sub></p>
+              <button class="page-button">add to cart</button>
+            </div>
+            <div class="menu-item">
+              <img src="images/s5.webp" alt="">
+              <h5>black hear</h5>
+              <p>$20.00 <sub>$25.00</sub></p>
+              <button class="page-button">add to cart</button>
+            </div>
+            <div class="menu-item">
+              <img src="images/s6.webp" alt="">
+              <h5>black hear</h5>
+              <p>$20.00 <sub>$25.00</sub></p>
+              <button class="page-button">add to cart</button>
+            </div>
+          </div>
+          <div class="main-product">
+            <div class="menu-item-e">
+              <div class="icons">
+                <i class="fas fa-shopping-cart"></i>
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-eye"></i>
+              </div>
+              <img src="images/s7.png" alt="">
+              <h5>Coffee</h5>
+              <div class="icons">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <p>$20.00 <sub>$25.00</sub></p>
+            </div>
+            <div class="menu-item-e">
+              <div class="icons">
+                <i class="fas fa-shopping-cart"></i>
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-eye"></i>
+              </div>
+              <img src="images/s8.png" alt="">
+              <h5>therapy</h5>
+              <div class="icons">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <p>$20.00 <sub>$25.00</sub></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end products -->
+      <!-- start custamers -->
+      <div id="review" class="sections">
+        <h2 class="main-heading">customer's <span>Review</span></h2>
+        <div class="container">
+          <div class="customer-info">
+            <div class="icons">
+              <i>''</i>
+            </div>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem distinctio beatae hic quaerat.
+              Temporibus cum excepturi iusto voluptates nulla unde!</p>
+            <img src="images/s1.jpg" alt="yousif">
+            <h5>Yousif Abdelwahed</h5>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+          <div class="customer-info">
+            <div class="icons">
+              <i>''</i>
+            </div>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem distinctio beatae hic quaerat.
+              Temporibus cum excepturi iusto voluptates nulla unde!</p>
+            <img src="images/s2.jpg" alt="Reda">
+            <h5>Reda Abdelwahed</h5>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+          <div class="customer-info">
+            <div class="icons">
+              <i>''</i>
+            </div>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem distinctio beatae hic quaerat.
+              Temporibus cum excepturi iusto voluptates nulla unde!</p>
+            <img src="images/s3.jpg" alt="mostafa">
+            <h5>Mostafa Abdelwahed</h5>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end custamers -->
+      <!-- start contact us -->
+      <div class="sections" id="contact">
+        <h2 class="main-heading"><span>contact</span> us</h2>
+        <div class="container">
+          <div class="form">
+            <h3>get in touch</h3>
+            <form action="#">
+              <div class="map">
+                <!-- Embedded Google Map -->
+                <iframe 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509375!2d144.9537353153218!3d-37.816279179751504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43b333e349%3A0x9b0b7c78dbbace46!2sVictoria%20State%20Library%2C%20Australia!5e0!3m2!1sen!2seg!4v1690973092102!5m2!1sen!2seg" 
+                  style="border:0;" 
+                  allowfullscreen="" 
+                  loading="lazy" 
+                  referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+              </div>
+              <div>
+                <i class="fas fa-user"></i>
+                <input type="text" placeholder="Name" required>
+              </div>
+              <div>
+                <i class="fas fa-envelope"></i>
+                <input type="email" placeholder="E-mail" required>
+              </div>
+              <div>
+                <i class="fas fa-phone"></i>
+                <input type="text" placeholder="Phone Number" required maxlength="11">
+              </div>
+            </form>
+            <button class="page-button">send message</button>
+          </div>
+        </div>
+      </div>      
+      <!-- end contact us -->
+      <!-- start blogs -->
+      <div id="blogs" class="sections">
+        <h2 class="main-heading">our <span>blogs</span></h2>
+        <div class="container">
+          <div class="blog-info">
+            <div class="image">
+              <img id="blog-image-1" src="images/s1.webp" alt="bloge image">
+              <div class="buttons">
+                <button class="fas fa-angle-left fa-2x blog-left-button1"></button>
+                <button class="fas fa-angle-right fa-2x blog-right-button1"></button>
+              </div>
+            </div>
+            <div class="box">
+              <h5>The Coffee Sold by</h5>
+              <p>By:Abd_Elrahman Abd_Elwahed</p>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, ipsa.</p>
+              <button class="page-button">Read More</button>
+            </div>
+          </div>
+          <div class="blog-info">
+            <div class="image">
+              <img id="blog-image-2" src="images/s9.webp" alt="bloge image">
+              <div class="buttons">
+                <button class="fas fa-angle-left fa-2x blog-left-button2"></button>
+                <button class="fas fa-angle-right fa-2x blog-right-button2"></button>
+              </div>
+            </div>
+            <div class="box">
+              <h5>The Therapy Sold by</h5>
+              <p>Abd_Elrahman Abd_Elwahed</p>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, ipsa.</p>
+              <button class="page-button">Read More</button>
+            </div>
+          </div>
+          <div class="blog-info">
+            <div class="image">
+              <img id="blog-image-3" src="images/s5.webp" alt="bloge image">
+              <div class="buttons">
+                <button class="fas fa-angle-left fa-2x blog-left-button3"></button>
+                <button class="fas fa-angle-right fa-2x blog-right-button3"></button>
+              </div>
+            </div>
+            <div class="box">
+              <h5>The Coffee & Therapy Sold by</h5>
+              <p>By:Abd_Elrahman Abd_Elwahed</p>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, ipsa.</p>
+              <button class="page-button">Read More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end blogs -->
+    </div>
+    <!-- start footer -->
+    <div class="footer">
+      <div class="container">
+        <div class="foot-image">
+          <ul id="links">
+            <li>
+              <a href="#" data-scroll="home" class="header-links active" class="active">Home</a>
+            </li>
+            <li>
+              <a href="#" data-scroll="about" class="header-links">About</a>
+            </li>
+            <li>
+              <a href="#" data-scroll="products" class="header-links">Products</a>
+            </li>
+            <li>
+              <a href="#" data-scroll="review" class="header-links">Review</a>
+            </li>
+            <li>
+              <a href="#" data-scroll="contact" class="header-links">Contact</a>
+            </li>
+            <li>
+              <a href="#" data-scroll="blogs" class="header-links">Blogs</a>
+            </li>
+          </ul>
+        </div>
+        <p>we are social</p>
+        <div class="socia-icons">
+          <a target="_blank" href="https://www.facebook.com/profile.php?id=61566460044973&locale=ar_AR">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a target="_blank" href="https://www.youtube.com/channel/UCZrD76SrOJ4Z8zL_ViXxICA">
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a target="_blank" href="https://github.com/RedaAlsontoy">
+            <i class="fab fa-github"></i>
+          </a>
+          <a target="_blank" href="https://www.linkedin.com/in/reda-abdelwahed-elsonoty">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a target="_blank" href="https://redaalsontoy.github.io/seave_all_password/">
+            <i class=""><b>R</b></i>
+          </a>
+        </div>
+        <p class="copyright">&copy;All right reserved for
+          <span class="name">RedaAlsontoy</span>
+          <span class="date"></span>
+        </p>
+      </div>
+    </div>
+    <!-- end footer -->
+
+    <!-- toggle links color on click or scroll -->
+    <script src="js/header_links.js"></script>
+    <!-- chang landing background image -->
+    <script src="js/landing_background.js"></script>
+    <!-- chang main color form all page -->
+    <script src="js/swich_main_color.js"></script>
+    <script src="js/scroll-to-top/scroll-button.js"></script>
+    <link rel="stylesheet" href="js/scroll-to-top/scroll-button.css" />
+    <!-- chang image in all boxes not landing -->
+    <script src="js/chang-images.js"></script>
+    <!-- page background dark & light -->
+    <script src="js/darkAndLight.js"></script>
+    <!-- date -->
+    <script src="js/date.js"></script>
+  </body>
+
+</html>

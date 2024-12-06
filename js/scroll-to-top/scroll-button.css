@@ -1,0 +1,36 @@
+/* Start Scroll Button */
+#scrollTop{
+    display: none;
+    color: var(--global-color);
+    padding: 5px 0px 0px 1px;
+    position: fixed;
+    bottom: 30px;
+    right: 15px;
+    border-radius: 15px;
+    margin: 0px 10px 5px 0;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--transparent-color);
+}
+#scrollTop:hover{
+    color: var(--alt-color);
+    transition:all .4s ease-in-out;
+    transform:translate(0px, -5px)
+}
+#scrollTop:active, .click:active{
+    transform:scale(.95);
+    transition:all 0s ease-in-out;
+}
+.i{
+    position: relative;
+    bottom: -3px;
+    left: -6px;
+    z-index: 5000;
+}
+/* End Scroll Button */
