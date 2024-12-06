@@ -681,10 +681,10 @@ hr{
 }
 
 
-.landing .change-background:hover,
+/* .landing .change-background:hover,
 #blogs .container .image .buttons button:hover {
   color: var(--main-color);
-}
+} */
 
 .landing .change-background:first-of-type {
   left: 20px;
